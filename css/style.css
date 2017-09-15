@@ -1,0 +1,295 @@
+
+/*Import Raleway 400, 600 and 700 on line #1 (must be on first line)*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i|Spectral:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px 0px 0px 0px;
+  font-family:  'Raleway', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  margin: 0px 0px 0px 0px;
+
+}
+
+header{
+
+}
+
+header nav{
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+.navcolor{
+  background-color: #fff;
+  box-shadow: 0 0 10px #000;
+
+
+}
+nav a{
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  margin-right: 45px;
+  margin-left: 20px;
+  text-align: center;
+  color: #000;
+
+}
+.cap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+h2{
+  font-size: 24px;
+  font-family:  'Raleway', sans-serif;
+  text-align: center;
+
+}
+li{
+  color:orange;
+  display: inline-block;
+  margin: 20px;
+  transition: all .5s ease;
+
+
+}
+ul{
+  text-align: center;
+  padding: 0;
+  transition: all .5s ease;
+}
+h4{
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+}
+footer{
+  text-align: center;
+  background-color: #000000;
+  color: #edf1f7;
+  display: grid;
+  grid-template-columns: repeat(3,33%);
+  padding:10px 200px;
+}
+
+footer h4{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+a:hover{
+  color: orange;
+}
+footer nav{margin: 0 ;
+  padding-top: 5px;}
+  footer nav a {
+    color: #edf1f7;
+    text-transform: uppercase;
+    display: block;
+    padding:6px;
+    margin: 0;
+
+  }
+  iframe{
+    width: 80%;
+    height: 100%;
+  }
+  .addUL{
+    color:black;
+}
+
+  footer i{
+    color: #edf1f7;
+    margin-right: 20px;
+    margin-left: 20px;}
+
+    .brunch, .dinner{
+      display: grid;
+      grid-template-columns: repeat(3,33%)}
+
+      .dinner{
+        margin-top: 50px;
+      }
+      .lpad{
+        margin-left: 80px;
+        margin-bottom: 50px;
+      }
+      .drinks{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(4,25%);}
+        .loca{
+          display: grid;
+          grid-template-columns: 25% 75%;
+          margin: 20px 0;
+
+        }
+        .loca section{
+          text-align: center;
+          padding: 0;
+          margin: 0;
+        }
+        .loca .lpad{  padding: 0;
+          margin: 0;}
+
+          .reserv{
+            padding: 80px;
+            text-align: center;
+            background-color:#00A6B3;
+          }
+          button{
+
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+            background-color: #F15B31;
+            text-transform: uppercase;
+            /*border:solid;*/
+
+            padding: 5px 20px;
+
+          }
+          h2{
+            font-size: 30px;
+          }
+          .ol{
+            background-image: url("../images/home-header.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+
+          }
+          header nav i {
+            display: none;
+            opacity: 0;
+          }
+          .cap h1 {
+            text-align: center;
+            color:#ffffff;
+            font-size: 120px;
+            font-family: 'Raleway', sans-serif;
+            text-transform: uppercase;
+            margin-bottom: 0px;
+            padding-bottom: 10px;
+          }
+          .cap p {
+            margin-top: 0px;
+            padding-top: 10px;
+            text-align: center;
+            color:#ffffff;
+            font-size: 26px;
+            font-family: 'Raleway', sans-serif;
+            text-transform: uppercase;
+          }
+          .caro{
+            position:relative;
+          }
+          .caro img{
+
+          }
+          .hid{
+            display: none;
+          }
+          .caro i{
+            z-index: 1;
+            position: absolute;
+            top:50%;
+          }
+          #larrow{
+            position: absolute;
+            left:0px;
+            top:45%;
+          }
+          #rarrow{
+            position: absolute;
+            right:50px;
+            top:45%;
+
+          }
+
+
+
+          @-webkit-keyframes spaceboots {
+            0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+            10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+            30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+            40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+            50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+            70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+            80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+            90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+            100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+          }
+
+          .shake {
+            -webkit-animation-name: spaceboots;
+            -webkit-animation-duration: 0.8s;
+            -webkit-transform-origin:50% 50%;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+          }
+          @media screen and (max-width: 600px) {
+            .loca, .brunch, .dinner, .drinks, footer {
+              grid-template-columns: repeat(1, 1fr);
+            }
+            header nav a{
+              margin: 10px;
+            }
+            .caro i{
+              font-size: 20px;
+            }
+              #rarrow{
+                position: absolute;
+                right:3%;;
+                top:45%;
+            }
+          header nav a
+          {display: none;}
+
+
+          header nav i {
+            display: block;
+            opacity: 1;
+          padding-left: 10px;
+          }
+          header nav{text-align: left;}
+            .cap h1{ font-size: 80px;}
+            .cap p{font-size: 28px;}
+            footer{padding: 0px;}
+          }
+
+          ul li:hover{
+            color:black;
+            transform: scale(1.5,1.5);
+          }
+}
+
+  /*@media screen and (min-width: 700px) {
+    header nav a
+    {display: block-inlne;}
+  }*/
+     /* ----------------------------------------
+          Add comments here for organization!!
+          ------------------------------------------- */
