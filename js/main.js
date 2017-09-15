@@ -90,9 +90,26 @@ $(window).scroll(function() {
 
 
 });
+$('header nav i').hide()
+
+$(window).resize(function() {
+  if ($(window).width() > 600) {
+    $('header nav i').hide();
+    $('header nav a').show();
+      $('header nav a').removeClass('dispb');
+  }
+  else if ($(window).width() <= 600){
+    $('header nav i').show();
+    $('header nav a').hide();
+    $('header nav a').addClass('dispb');
+  }
+
+});
+
 $('header nav i').on('click', function (){
   $('header nav a').toggle();
   console.log("working");
+
 });
 
 
@@ -101,4 +118,4 @@ $('header nav i').on('click', function (){
 
 // Create a variable to keep track of which image # we're on
 // When the user clicks the right arrow
-  // If imageNumber < 3
+// If imageNumber < 3
